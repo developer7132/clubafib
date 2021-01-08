@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Col, Container, Row, Button} from 'reactstrap';
 import { withSnackbar } from 'notistack';
 import { withRouter } from 'react-router-dom';
+import {Helmet} from "react-helmet";
+
 import './subscribe.scss';
 
 class HomeSubscribe extends Component {
