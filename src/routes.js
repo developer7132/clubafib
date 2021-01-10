@@ -43,9 +43,9 @@ export const HomeRoutes = [
 	{ path: '/faqs', name: "FAQ's", component: Faqs },
 	{ path: '/privacy-policy', name: "Privacy", component: Privacy },
 	{ path: '/terms-and-conditions', name: "Terms", component: Terms },
-	{ path: '/article', exact: true, name: 'Articles', component: Articles },
+	{ path: '/articles', exact: true, name: 'Articles', component: Articles },
 	{ path: '/article/:id', name: 'Article Detail', component: HomeArticleDetail },
-	{ path: '/post', name: 'Posts', component: HomePost },
+	{ path: '/posts', name: 'Posts', component: HomePost },
 	{ path: '/post/:id', name: 'Post Detail', component: HomePostDetail },
 	{ path: '/subscribe', name: "Subscribe", component: HomeSubscribe },
 ];
@@ -53,7 +53,7 @@ export const HomeRoutes = [
 
 export const AdminRoutes = [
 	{ path: '/admin', name: 'Home' },
-	{ path: '/admin/article', name: 'Article', component: Article },
+	{ path: '/admin/articles', name: 'Article', component: Article },
 	{ path: '/admin/article/:id', name: 'Create Article', component: ArticleDetail },
 	{ path: '/admin/user', name: 'Users', component: User },
 	{ path: '/admin/user/:id', name: 'Detail', component: UserDetail },

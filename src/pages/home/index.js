@@ -130,7 +130,7 @@ class Home extends Component {
             <p>Learn about AFib, how to reduce your<br />symptoms, and avoid its dangers</p>
             <div className="show-web-flex v-r">
               {this.props.categories.map((item, index) => <div className="articles-row" key={index}>
-                <NavLink to={`/article?category=${item.id}`} className="article-item header">
+                <NavLink to={`/articles?category=${item.id}`} className="article-item header">
                   <div className={`article-content v-c`} style={{background: item.color}}>
                     <img src={logowhite} className="white-logo" alt="whitelogo" />
                     <p className="header-title">{item.title}</p>
@@ -145,7 +145,7 @@ class Home extends Component {
               </div>)}
             </div>
             <div className="show-mobile-flex articles-row">
-              {this.props.categories.map((item, index) => <NavLink to={`/article?category=${item.id}`} className="article-item header" key={index}>
+              {this.props.categories.map((item, index) => <NavLink to={`/articles?category=${item.id}`} className="article-item header" key={index}>
                 <div className={`article-content v-c`} style={{background: item.color}}>
                   <img src={logowhite} className="white-logo" alt="whitelogo" />
                   <p className="header-title">{item.title}</p>

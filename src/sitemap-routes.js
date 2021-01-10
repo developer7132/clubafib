@@ -8,7 +8,7 @@ export default (
     <Route path='/faqs' />
     <Route path='/privacy-policy' />
     <Route path='/terms-and-conditions' />
-    <Route path='/article' />
+    <Route path='/articles' />
     <Route path='/article/:id' />
     <Route path='/subscribe' />
   </Route>
