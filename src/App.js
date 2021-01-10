@@ -65,9 +65,9 @@ class App extends React.Component {
               <Route path="/faqs" name="FAQ's" render={props => <HomeLayout> <Faqs {...props}/> </HomeLayout>} />
               <Route path="/privacy-policy" name="Privacy" render={props => <HomeLayout> <Privacy {...props}/> </HomeLayout>} />
               <Route path="/terms-and-conditions" name="Terms" render={props => <HomeLayout> <Terms {...props}/> </HomeLayout>} />
-              <Route exact path="/article" name="Articles" render={props => <HomeLayout> <Articles {...props}/> </HomeLayout>} />
+              <Route path="/articles" name="Articles" render={props => <HomeLayout> <Articles {...props}/> </HomeLayout>} />
               <Route path="/article/:id" name="Article Detail" render={props => <HomeLayout> <HomeArticleDetail {...props}/> </HomeLayout>} />
-              <Route path="/post" name="Posts" render={props => <HomeLayout> <HomePost {...props}/> </HomeLayout>} />
+              <Route path="/posts" name="Posts" render={props => <HomeLayout> <HomePost {...props}/> </HomeLayout>} />
               <Route path="/post/:id" name="Post Detail" render={props => <HomeLayout> <HomePostDetail {...props}/> </HomeLayout>} />
               <Route path="/subscribe" name="Subscribe" render={props => <HomeLayout> <HomeSubscribe {...props}/> </HomeLayout>} />
 
