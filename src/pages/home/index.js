@@ -56,7 +56,7 @@ class Home extends Component {
           <Container>
             <div className="writing-area">
               <div className="start-writing v-r">
-                <h3>Welcome to <span>Club</span><span>Afib</span></h3>
+                <h1>Welcome to <span>Club</span><span>Afib</span></h1>
                 <p>Learn all about Atrial Fibrillation, Finally<br />Manage it, and Get the Support you Need<br />by Joining our Community of Club<br />Members and Afib Experts</p>
                 <NavLink to={this.props.loggedin ? '/admin' : '/register'} className="v-c h-c">{this.props.loggedin ? 'Dashboard' : 'Sign Up'}</NavLink>
               </div>
@@ -64,6 +64,7 @@ class Home extends Component {
             <img src={start} alt="start" />
           </Container>
         </div>
+        
         <Container className="v-r home-container">
           <div className="tile-parts home-section v-r">
             <div className="split-row">
@@ -104,6 +105,7 @@ class Home extends Component {
             </div>
           </div>
         </Container>
+        
         <Container className="home-container">
           <div className="home-section videos-area">
             <ItemsCarousel
@@ -124,9 +126,10 @@ class Home extends Component {
             </ItemsCarousel>
           </div>
         </Container>
+        
         <Container className="v-r">
           <div className="article-parts home-section v-r">
-            <h3>Understand your AFib</h3>
+            <h2>Understand your AFib</h2>
             <p>Learn about AFib, how to reduce your<br />symptoms, and avoid its dangers</p>
             <div className="show-web-flex v-r">
               {this.props.categories.map((item, index) => <div className="articles-row" key={index}>
@@ -154,12 +157,15 @@ class Home extends Component {
             </div>
           </div>
         </Container>
+        
         <Container className="v-r home-container">
           <div className="download-part v-r">
             <h3>Interested in becoming a <br />Club Member?</h3>
             <p>Download our free app here</p>
             <div className="v-c img-area">
-              <a href="https://apps.apple.com/us/app/club-afib/id1531969874"  target="_blank" rel="noopener noreferrer"><img src={apple} alt="apple" /></a>
+              <a href="https://apps.apple.com/us/app/club-afib/id1531969874"  target="_blank" rel="noopener noreferrer">
+                <img src={apple} alt="apple" />
+              </a>
             </div>
           </div>
         </Container>

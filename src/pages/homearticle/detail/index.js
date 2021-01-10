@@ -133,7 +133,7 @@ class ArticleDetail extends Component {
 									</div>
 								</Col>
 								<Col md="12">
-									<h1 className="item-title">{article.title}</h1>
+									<h2 className="item-title">{article.title}</h2>
 								</Col>
 								<Col md="12">
 									<div dangerouslySetInnerHTML={innerFunc(article.description)} onClick={e => this.contentClick(e)}/>
